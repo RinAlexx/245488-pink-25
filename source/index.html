@@ -107,7 +107,44 @@
       </section>
 
       <section class="tariffs">
-        <div class="tariffs__wrapper">
+        <div class="tariffs__wrapper slider">
+          <h2 class="visually-hidden">Наши тарифы</h2>
+
+          <table class="tariffs__list tariffs-table">
+            <tbody class="tariffs-table__body">
+              <tr class="tariffs-table__header-row">
+                <th class="tariffs-table__header-cell tariffs-table__header-cell--hit">
+                  <span class="tariffs-table__tariff-hit">Хит</span>
+                  <span class="tariffs-table__tariff-name">СТАНДАРТ</span>
+                  <span class="tariffs-table__tariff-price">3,99 USD</span>
+                </th>
+              </tr>
+              <tr class="tariffs-table__row">
+                <td class="tariffs-table__cell">
+                  <span class="tariffs-table__option">Розовый фильтр</span>
+                  <span class="tariffs-table__option-available tariffs-table__option-available--yes">Есть</span>
+                </td>
+              </tr>
+              <tr class="tariffs-table__row">
+                <td class="tariffs-table__cell">
+                  <span class="tariffs-table__option">Смайлики</span>
+                  <span class="tariffs-table__option-available tariffs-table__option-available--yes">Есть</span>
+                </td>
+              </tr>
+              <tr class="tariffs-table__row">
+                <td class="tariffs-table__cell">
+                  <span class="tariffs-table__option">Комментарии</span>
+                  <span class="tariffs-table__option-available tariffs-table__option-available--no">Нет</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p class="tariffs__toggles slider__toggles">
+            <button class="slider__toggle" type="button">1</button>
+            <button class="slider__toggle slider__toggle--current" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
         </div>
       </section>
 
