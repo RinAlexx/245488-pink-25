@@ -146,9 +146,21 @@
               <textarea class="description__text" name="description" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
 
-            <button class="contestant-data__button" type="submit">Отправить форму</button>
+            <button class="contestant-data__button form-button" type="submit">Отправить форму</button>
 
             <span class="contestant-data__required"><span class="contestant-data__required-mark">*</span> — обязательные поля</span>
+
+            <div class="contestant-data__popup popup-error">
+              <h3 class="contestant-data__popup-title">Что-то пошло не так!</h3>
+              <p class="contestant-data__popup-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+              <button class="contestant-data__popup-button form-button" type="button">ОК</button>
+            </div>
+
+            <div class="contestant-data__popup popup-success">
+              <h3 class="contestant-data__popup-title">Ваша заявка отправлена</h3>
+              <p class="contestant-data__popup-text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+              <button class="contestant-data__popup-button form-button" type="button">Закрыть окно</button>
+            </div>
           </form>
         </div>
       </section>
