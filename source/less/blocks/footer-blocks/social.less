@@ -1,0 +1,33 @@
+.social__list {
+  display: grid;
+  grid-template-columns: repeat(3, 54px);
+  gap: 9px;
+  justify-content: center;
+
+  padding-bottom: 38px;
+}
+
+.social__link {
+  display: block;
+  width: 54px;
+  height: 54px;
+
+  border: 3px solid rgba(40, 54, 69, 0.1);
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--vkontakte {
+    background-image: url("../../../../img/vk-logo.svg");
+  }
+
+  &--telegram {
+    background-image: url("../../../../img/tg-logo.svg");
+  }
+
+  &--youtube {
+    background-image: url("../../../../img/youtube-logo.svg");
+  }
+}
