@@ -1,11 +1,19 @@
 .main-header {
   position: absolute;
   left: 50%;
+
   margin-left: -160px;
+  padding-bottom: 374px;
 
   color: #ffffff;
 
-  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url("../../../../img/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+
+  &--inner {
+    background-image: url("../../../../img/bg-image-inner.jpg");
+  }
 }
 
 .main-header__wrapper {
@@ -15,6 +23,7 @@
 
 .main-header__logo {
   position: absolute;
+  z-index: 2;
 
   display: block;
   padding: 22px 20px;
