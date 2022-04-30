@@ -1,0 +1,35 @@
+.full-name {
+  margin: 0;
+  padding: 0 20px;
+  border: none;
+}
+
+.full-name__label {
+  display: flex;
+  flex-direction: column;
+  padding-left: 23px;
+  padding-top: 29px;
+  padding-bottom: 17px;
+}
+
+.full-name__text {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  padding-left: 23px;
+
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 30px;
+  color: @color-darkgrey;
+
+  border: 2px solid #E5E5E5;
+  border-radius: 1px;
+
+  &::placeholder {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    line-height: 30px;
+    color: @color-darkgrey;
+  }
+}
