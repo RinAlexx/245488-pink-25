@@ -1,0 +1,29 @@
+.applications-list__control {
+  position: relative;
+}
+
+.applications-list__control-mark {
+  position: absolute;
+
+  width: 37px;
+  height: 37px;
+
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+}
+
+.applications-list__control-label {
+  display: block;
+  padding-left: 59px;
+  padding-bottom: 69px;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.applications-list__control-input:checked + .applications-list__control-mark {
+  background-image: url("../../../img/ellipse.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

@@ -55,100 +55,124 @@
               <legend class="visually-hidden">Представьтесь, пожалуйста.</legend>
 
               <label class="contestant-data__input-label"><span class="full-name__label">Фамилия:</span>
-                <input class="full-name__text" type="text" name="surname" placeholder="Укажите фамилию *" required>
+                <input class="contestant-data__input full-name__text" type="text" name="surname" placeholder="Укажите фамилию *" required>
               </label>
 
               <label class="contestant-data__input-label"><span class="full-name__label">Имя:</span>
-                <input class="full-name__text" type="text" name="name" placeholder="Введите ваше имя *" required>
+                <input class="contestant-data__input full-name__text" type="text" name="name" placeholder="Введите ваше имя *" required>
               </label>
 
               <label class="contestant-data__input-label"><span class="full-name__label">Отчество:</span>
-                <input class="full-name__text" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+                <input class="contestant-data__input full-name__text" type="text" name="patronymic" placeholder="Ну и отчество тоже">
               </label>
             </fieldset>
 
-            <fieldset class="contestant-data__achievements achievements">
-              <legend class="contestant-data__input-label achievements__title">Ваши безбашенные достижения в путешествии.</legend>
+            <div class="contestant-data__bg-color-wrapper">
+              <fieldset class="contestant-data__achievements achievements">
+                <legend class="contestant-data__input-label achievements__title">Ваши безбашенные достижения в путешествии.</legend>
 
-              <ul class="achievements__checkbox achievements-list reset-list">
-                <li class="achievements-list__item">
-                  <label class="achievements-list__control">Сделал селфи с акулой
-                    <input class="achievements-list__control-input" type="checkbox" name="shark" checked>
-                  </label>
-                </li>
+                <ul class="achievements__checkbox achievements-list reset-list">
+                  <li class="achievements-list__item">
+                    <label class="achievements-list__control">
+                      <input class="achievements-list__control-input visually-hidden" type="checkbox" name="shark" checked>
+                      <span class="achievements-list__control-mark"></span>
+                      <span class="achievements-list__control-label">Сделал селфи с акулой</span>
+                    </label>
+                  </li>
 
-                <li class="achievements-list__item">
-                  <label class="achievements-list__control">Обгорел на пляже
-                    <input class="achievements-list__control-input" type="checkbox" name="beach" checked>
-                  </label>
-                </li>
+                  <li class="achievements-list__item">
+                    <label class="achievements-list__control">
+                      <input class="achievements-list__control-input visually-hidden" type="checkbox" name="beach" checked>
+                      <span class="achievements-list__control-mark"></span>
+                      <span class="achievements-list__control-label">Обгорел на пляже</span>
+                    </label>
+                  </li>
 
-                <li class="achievements-list__item">
-                  <label class="achievements-list__control">Видел Чака Норриса
-                    <input class="achievements-list__control-input" type="checkbox" name="chuck-norris">
-                  </label>
-                </li>
+                  <li class="achievements-list__item">
+                    <label class="achievements-list__control">
+                      <input class="achievements-list__control-input visually-hidden" type="checkbox" name="chuck-norris">
+                      <span class="achievements-list__control-mark"></span>
+                      <span class="achievements-list__control-label">Видел Чака Норриса</span>
+                    </label>
+                  </li>
 
-                <li class="achievements-list__item">
-                  <label class="achievements-list__control">Накупил сувениров
-                    <input class="achievements-list__control-input" type="checkbox" name="souvenirs">
-                  </label>
-                </li>
+                  <li class="achievements-list__item">
+                    <label class="achievements-list__control">
+                      <input class="achievements-list__control-input visually-hidden" type="checkbox" name="souvenirs">
+                      <span class="achievements-list__control-mark"></span>
+                      <span class="achievements-list__control-label">Накупил сувениров</span>
+                    </label>
+                  </li>
 
-                <li class="achievements-list__item">
-                  <label class="achievements-list__control">Удержал башню
-                    <input class="achievements-list__control-input" type="checkbox" name="tower" checked>
-                  </label>
-                </li>
+                  <li class="achievements-list__item">
+                    <label class="achievements-list__control">
+                      <input class="achievements-list__control-input visually-hidden" type="checkbox" name="tower" checked>
+                      <span class="achievements-list__control-mark"></span>
+                      <span class="achievements-list__control-label">Удержал башню</span>
+                    </label>
+                  </li>
 
-                <li class="achievements-list__item">
-                  <label class="achievements-list__control">Разгромил отель
-                    <input class="achievements-list__control-input" type="checkbox" name="hotel">
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+                  <li class="achievements-list__item">
+                    <label class="achievements-list__control">
+                      <input class="achievements-list__control-input visually-hidden" type="checkbox" name="hotel">
+                      <span class="achievements-list__control-mark"></span>
+                      <span class="achievements-list__control-label">Разгромил отель</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
 
             <fieldset class="contestant-data__contacts contestant-contacts">
               <legend class="visually-hidden">Укажите ваши контакты.</legend>
 
-              <label class="contestant-data__input-label contestant-contacts__label">Номер телефона
-                <input class="contestant-contacts__text" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
+              <label class="contestant-data__input-label">
+                <span class="contestant-contacts__label">Номер телефона</span>
+                <input class="contestant-data__input contestant-contacts__text" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
               </label>
 
-              <label class="contestant-data__input-label contestant-contacts__label">Адрес почты
-                <input class="contestant-contacts__text" type="email" name="email" placeholder="Введите почту *" required>
+              <label class="contestant-data__input-label">
+                <span class="contestant-contacts__label">Адрес почты</span>
+                <input class="contestant-data__input contestant-contacts__text" type="email" name="email" placeholder="Введите почту *" required>
               </label>
             </fieldset>
 
-            <fieldset class="contestant-data__app applications">
-              <legend class="contestant-data__input-label applications__title">С каким приложением путешествовали?</legend>
+            <div class="contestant-data__bg-color-wrapper">
+              <fieldset class="contestant-data__app applications">
+                <legend class="contestant-data__input-label applications__title">С каким приложением путешествовали?</legend>
 
-              <ul class="applications__radio-button applications-list reset-list">
-                <li class="applications-list__item">
-                  <label class="applications-list__control">Pink для iOS
-                    <input class="applications-list__control-input" type="radio" name="application" value="iOS" checked>
-                  </label>
-                </li>
+                <ul class="applications__radio-button applications-list reset-list">
+                  <li class="applications-list__item">
+                    <label class="applications-list__control">
+                      <input class="applications-list__control-input visually-hidden" type="radio" name="application" value="iOS" checked>
+                      <span class="applications-list__control-mark"></span>
+                      <span class="applications-list__control-label">Pink для iOS</span>
+                    </label>
+                  </li>
 
-                <li class="applications-list__item">
-                  <label class="applications-list__control">Pink на Android
-                    <input class="applications-list__control-input" type="radio" name="application" value="Android">
-                  </label>
-                </li>
+                  <li class="applications-list__item">
+                    <label class="applications-list__control">
+                      <input class="applications-list__control-input visually-hidden" type="radio" name="application" value="Android">
+                      <span class="applications-list__control-mark"></span>
+                      <span class="applications-list__control-label">Pink на Android</span>
+                    </label>
+                  </li>
 
-                <li class="applications-list__item">
-                  <label class="applications-list__control">Windows Phone
-                    <input class="applications-list__control-input" type="radio" name="application" value="Windows-Phone">
-                  </label>
-                </li>
-              </ul>
-            </fieldset>
+                  <li class="applications-list__item">
+                    <label class="applications-list__control">
+                      <input class="applications-list__control-input visually-hidden" type="radio" name="application" value="Windows-Phone">
+                      <span class="applications-list__control-mark"></span>
+                      <span class="applications-list__control-label">Windows Phone</span>
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+            </div>
 
             <fieldset class="contestant-data__description description">
               <legend class="contestant-data__input-label description__title">Опишите свои эмоции</legend>
 
-              <textarea class="description__text" name="description" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              <textarea class="contestant-data__input description__text" name="description" rows="8" cols="80" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
 
             <button class="contestant-data__button form-button" type="submit">Отправить форму</button>
