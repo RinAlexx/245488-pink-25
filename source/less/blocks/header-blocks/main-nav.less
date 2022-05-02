@@ -1,0 +1,27 @@
+.main-nav {
+  position: relative;
+  z-index: 1;
+
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.main-nav__toggle {
+  display: block;
+  margin-left: auto;
+  padding: 21px 20px;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.main-nav__toggle-icon {
+  &:hover {
+    fill: @color-bright;
+  }
+
+  &:active {
+    fill: @color-bright;
+    opacity: 0.3;
+  }
+}

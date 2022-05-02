@@ -1,0 +1,29 @@
+.achievements-list__control {
+  position: relative;
+}
+
+.achievements-list__control-label {
+  display: block;
+  padding-left: 59px;
+  padding-bottom: 69px;
+
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.achievements-list__control-mark {
+  position: absolute;
+
+  width: 35px;
+  height: 35px;
+
+  background-color: @color-white;
+  border: 2px solid @color-grey-border;
+  border-radius: 1px;
+}
+
+.achievements-list__control-input:checked + .achievements-list__control-mark {
+  background-image: url("../img/tick.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
