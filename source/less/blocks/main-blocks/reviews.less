@@ -20,8 +20,45 @@
   color: @color-black;
 }
 
+.reviews__author-info {
+  display: none;
+}
+
 .reviews__text {
   padding-bottom: 18px;
 
   line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__wrapper {
+    width: 660px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reviews__author-info {
+    display: block;
+  }
+
+  .reviews__text {
+    order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__wrapper {
+    width: 940px;
+  }
+
+  .reviews__item {
+    padding: 145px 126px 41px;
+
+    background-image: url("../img/quotes.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
 }

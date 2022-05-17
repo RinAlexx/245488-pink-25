@@ -4,14 +4,16 @@
 }
 
 .tariffs-table__header-cell {
-  width: 274px;
-  padding-top: 17px;
-  padding-bottom: 33px;
+  padding: 17px 95px 33px;
 
   color: @color-white;
 
   background-color: @color-darkgrey;
   border: 2px solid @color-grey-border;
+
+  &--empty {
+    display: none;
+  }
 }
 
 .tariffs-table__tariff-hit {
@@ -40,15 +42,17 @@
 }
 
 .tariffs-table__cell {
-  display: flex;
   padding: 20px;
-  text-align: justify;
 
   line-height: 30px;
   text-transform: uppercase;
 
   border: 2px solid @color-grey-border;
   background-color: @color-white;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .tariffs-table__option-available {
@@ -64,5 +68,40 @@
     height: 27px;
 
     background-image: url("../img/no-icon.svg");
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .tariffs-table {
+    display: flex;
+    justify-content: center;
+  }
+
+  .tariffs-table__option {
+    &--hidden {
+      display: none;
+    }
+  }
+
+  .tariffs-table__option-available {
+    margin: 0 auto;
+  }
+
+  .tariffs-table__header-cell {
+    padding-left: 33px;
+    padding-right: 33px;
+
+    &--empty {
+      display: table-cell;
+      background-color: transparent;
+      border-left: none;
+      border-top: none;
+    }
+  }
+
+  .tariffs-table__cell {
+    &--hidden {
+      display: table-cell;
+    }
   }
 }

@@ -1,9 +1,13 @@
 .download {
-  position: relative;
+  margin-top: -66px;
 
   text-align: center;
-
   color: @color-white;
+
+  background-color: #1d2631;
+  background-image: url("../img/bg-image.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .download__wrapper {
@@ -24,8 +28,6 @@
   padding-top: 28px;
   padding-left: 20px;
   padding-right: 20px;
-
-  background-color: #1d2631;
 }
 
 .download__link {
@@ -63,4 +65,34 @@
   padding-bottom: 38px;
 
   font-weight: 300;
+}
+
+@media (min-width: @tablet-width) {
+  .download {
+    text-align: left;
+    background-image: url("../img/bg-image-tablet.jpg");
+  }
+
+  .download__wrapper {
+    width: 660px;
+  }
+
+  .download__text {
+    padding-bottom: 40px;
+  }
+
+  .download__link {
+    width: 300px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download {
+    background-image: url("../img/bg-image-desktop.jpg");
+  }
+
+  .download__wrapper {
+    width: 940px;
+  }
 }
