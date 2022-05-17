@@ -11,3 +11,35 @@
   display: block;
   padding: 40px;
 }
+
+@media (min-width: @tablet-width) {
+  .main-footer {
+    padding: 36px 20px;
+  }
+
+  .main-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 660px;
+  }
+
+  .main-footer__logo {
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-footer {
+    padding-top: 71px;
+    padding-bottom: 71px;
+  }
+
+  .main-footer__wrapper {
+    width: 940px;
+  }
+
+  .main-footer__logo {
+    padding: 0;
+  }
+}

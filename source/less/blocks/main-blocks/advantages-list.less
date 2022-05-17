@@ -1,6 +1,12 @@
 .advantages-list {
   position: relative;
 
+  padding-bottom: 281px;
+
+  background-image: url("../img/iphone-3.png");
+  background-repeat: no-repeat;
+  background-position: center bottom -43px;
+
   &::before {
     content: "";
     position: absolute;
@@ -20,4 +26,45 @@
 .advantages-list__text {
   padding-top: 10px;
   padding-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages-list {
+    padding-bottom: 0;
+    background-position: left top;
+  }
+
+  .advantages-list__item {
+    padding-left: 200px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages-list {
+    display: flex;
+    justify-content: center;
+
+    background-image: none;
+  }
+
+  .advantages-list__item {
+    text-align: center;
+    padding: 360px 30px 60px;
+
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    &--left {
+      background-image: url("../img/iphone-1.png");
+    }
+
+    &--center {
+      background-image: url("../img/iphone-2.png");
+    }
+
+    &--right {
+      background-image: url("../img/iphone-3.png");
+    }
+  }
 }

@@ -2,17 +2,18 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
-      <div class="main-header__wrapper">
-        <a class="main-header__logo">
-          <img class="main-header__logo-image" src="img/logo.svg" width="74" height="23" alt="Приложение Пинк.">
-        </a>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo">
+            <img class="main-nav__logo-image" src="img/logo.svg" width="74" height="23" alt="Приложение Пинк.">
+          </a>
 
-        <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <svg class="main-nav__toggle-icon" width="50" height="24" viewBox="0 0 50 24" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -34,8 +35,8 @@
               <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/25">Html academy</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
 
     <main class="main-container">
@@ -75,21 +76,36 @@
             <p class="advantages__text-paragraph">Устали от серости мегаполиса?</p>
             <p class="advantages__text-paragraph">Нам есть, что вам предложить!</p>
           </div>
+        </div>
 
-          <ul class="advantages__list advantages-list reset-list">
-            <li class="advantages-list__item">
-              <b class="advantages-list__title">Поднимает настроение</b>
-              <p class="advantages-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-            </li>
-            <li class="advantages-list__item">
-              <b class="advantages-list__title">Меняет мир вокруг</b>
-              <p class="advantages-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-            </li>
-            <li class="advantages-list__item">
-              <b class="advantages-list__title">Заводит новых друзей</b>
-              <p class="advantages-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-            </li>
-          </ul>
+        <div class="advantages__list">
+          <div class="advantages__list-wrapper">
+            <ul class="advantages-list reset-list">
+              <li class="advantages-list__item advantages-list__item--left">
+                <b class="advantages-list__title">Поднимает настроение</b>
+                <p class="advantages-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              </li>
+              <li class="advantages-list__item advantages-list__item--center">
+                <b class="advantages-list__title">Меняет мир вокруг</b>
+                <p class="advantages-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              </li>
+              <li class="advantages-list__item advantages-list__item--right">
+                <b class="advantages-list__title">Заводит новых друзей</b>
+                <p class="advantages-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="effect">
+        <div class="effect__wrapper">
+          <span class="effect__hours">24</span>
+          <div class="effect__info">
+            <h1 class="effect__header">Эффект на 24 часа!</h1>
+            <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a class="effect__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
 
@@ -100,6 +116,7 @@
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
               <cite class="reviews__author-name">Николай Петров</cite>
+              <span class="reviews__author-info">25 лет, водитель трамвая</span>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
             </blockquote>
 
@@ -119,28 +136,71 @@
           <table class="tariffs__list tariffs-table">
             <tbody class="tariffs-table__body">
               <tr class="tariffs-table__header-row">
+                <th class="tariffs-table__header-cell tariffs-table__header-cell--empty">
+                </th>
+                <th class="tariffs-table__header-cell">
+                  <span class="tariffs-table__tariff-name">База</span><br>
+                  <span class="tariffs-table__tariff-price">1,99 USD</span><br>
+                </th>
                 <th class="tariffs-table__header-cell tariffs-table__header-cell--hit">
                   <span class="tariffs-table__tariff-hit">Хит</span>
                   <span class="tariffs-table__tariff-name">СТАНДАРТ</span><br>
                   <span class="tariffs-table__tariff-price">3,99 USD</span><br>
                 </th>
+                <th class="tariffs-table__header-cell">
+                  <span class="tariffs-table__tariff-name">АНЛИМ</span><br>
+                  <span class="tariffs-table__tariff-price">9,99 USD</span><br>
+                </th>
               </tr>
               <tr class="tariffs-table__row">
-                <td class="tariffs-table__cell">
+                <td class="tariffs-table__cell tariffs-table__cell--hidden">
                   <span class="tariffs-table__option">Розовый фильтр</span>
+                </td>
+                <td class="tariffs-table__cell">
+                  <span class="tariffs-table__option tariffs-table__option--hidden">Розовый фильтр</span>
+                  <span class="tariffs-table__option-available tariffs-table__option-available--yes"><span class="visually-hidden">Есть</span></span>
+                </td>
+                <td class="tariffs-table__cell">
+                  <span class="tariffs-table__option tariffs-table__option--hidden">Розовый фильтр</span>
+                  <span class="tariffs-table__option-available tariffs-table__option-available--yes"><span class="visually-hidden">Есть</span></span>
+                </td>
+                <td class="tariffs-table__cell">
+                  <span class="tariffs-table__option tariffs-table__option--hidden">Розовый фильтр</span>
                   <span class="tariffs-table__option-available tariffs-table__option-available--yes"><span class="visually-hidden">Есть</span></span>
                 </td>
               </tr>
               <tr class="tariffs-table__row">
-                <td class="tariffs-table__cell">
+                <td class="tariffs-table__cell tariffs-table__cell--hidden">
                   <span class="tariffs-table__option">Смайлики</span>
+                </td>
+                <td class="tariffs-table__cell">
+                  <span class="tariffs-table__option tariffs-table__option--hidden">Смайлики</span>
+                  <span class="tariffs-table__option-available tariffs-table__option-available--no"><span class="visually-hidden">Есть</span></span>
+                </td>
+                <td class="tariffs-table__cell">
+                  <span class="tariffs-table__option tariffs-table__option--hidden">Смайлики</span>
+                  <span class="tariffs-table__option-available tariffs-table__option-available--yes"><span class="visually-hidden">Есть</span></span>
+                </td>
+                <td class="tariffs-table__cell">
+                  <span class="tariffs-table__option tariffs-table__option--hidden">Смайлики</span>
                   <span class="tariffs-table__option-available tariffs-table__option-available--yes"><span class="visually-hidden">Есть</span></span>
                 </td>
               </tr>
               <tr class="tariffs-table__row">
-                <td class="tariffs-table__cell">
+                <td class="tariffs-table__cell tariffs-table__cell--hidden">
                   <span class="tariffs-table__option">Комментарии</span>
+                </td>
+                <td class="tariffs-table__cell">
+                  <span class="tariffs-table__option tariffs-table__option--hidden">Комментарии</span>
                   <span class="tariffs-table__option-available tariffs-table__option-available--no"><span class="visually-hidden">Нет</span></span>
+                </td>
+                <td class="tariffs-table__cell">
+                  <span class="tariffs-table__option tariffs-table__option--hidden">Комментарии</span>
+                  <span class="tariffs-table__option-available tariffs-table__option-available--no"><span class="visually-hidden">Нет</span></span>
+                </td>
+                <td class="tariffs-table__cell">
+                  <span class="tariffs-table__option tariffs-table__option--hidden">Комментарии</span>
+                  <span class="tariffs-table__option-available tariffs-table__option-available--yes"><span class="visually-hidden">Нет</span></span>
                 </td>
               </tr>
             </tbody>
@@ -159,10 +219,8 @@
           <h2 class="visually-hidden">Наши контакты</h2>
 
           <div class="contacts__info">
-            <p class="contacts__text">
-              <span>Остались вопросы?</span>
-              <span>Свяжитесь с нами!</span>
-            </p>
+            <p class="contacts__text">Остались вопросы?</p>
+            <p class="contacts__text">Свяжитесь с нами!</p>
 
             <ul class="contacts__list reset-list">
               <li class="contacts__item">
@@ -171,22 +229,22 @@
                   <span>+7 (812) 555-66-66</span>
                 </a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--email">
                 <b class="contacts__title">Пишите:</b>
                 <a class="contacts__email contacts__item-text" href="mailto:mail@htmlacademy.ru">
                   <span>mail@htmlacademy.ru</span>
                 </a>
               </li>
-              <li class="contacts__item">
+              <li class="contacts__item contacts__item--address">
                 <b class="contacts__title">Приезжайте в гости:</b>
                 <span class="contacts__item-text">ул. Большая Конюшенная, 19/8</span>
               </li>
             </ul>
           </div>
+        </div>
 
-          <div class="contacts__map">
-            <iframe class="contacts__map-image" src="https://yandex.ru/map-widget/v1/?um=constructor%3Afdb0573ae4b645d7ae46a5a3d0340abaafab78e726f95828149b8be5dd4f0fd0&amp;source=constructor"></iframe>
-          </div>
+        <div class="contacts__map">
+          <iframe class="contacts__map-image" src="https://yandex.ru/map-widget/v1/?um=constructor%3Afdb0573ae4b645d7ae46a5a3d0340abaafab78e726f95828149b8be5dd4f0fd0&amp;source=constructor"></iframe>
         </div>
       </section>
     </main>

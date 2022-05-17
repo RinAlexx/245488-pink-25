@@ -19,12 +19,34 @@
 }
 
 .advantages__list {
-  padding: 53px 20px 281px;
+  padding-bottom: 0;
 
   text-align: center;
 
   background-color: @color-lightgrey;
-  background-image: url("../img/iphone-1.png");
-  background-repeat: no-repeat;
-  background-position: center bottom -43px;
+}
+
+.advantages__list-wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .advantages__wrapper {
+    width: 660px;
+  }
+
+  .advantages__list-wrapper {
+    width: 660px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages__wrapper {
+    width: 940px;
+  }
+
+  .advantages__list-wrapper {
+    width: 940px;
+  }
 }

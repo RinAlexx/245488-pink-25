@@ -1,0 +1,56 @@
+.effect {
+  display: none;
+}
+
+.effect__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+  }
+
+  .effect__wrapper {
+    display: grid;
+    grid-template-columns: 238px 310px;
+    gap: 72px;
+    width: 660px;
+  }
+
+  .effect__hours {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 238px;
+    height: 276px;
+
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 163px;
+    color: @color-bright;
+
+    background-image: url("../img/timer.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    background-color: @color-lightgrey;
+  }
+
+  .effect__wrapper {
+    grid-template-columns: 298px 570px;
+    width: 940px;
+  }
+
+  .effect__hours {
+    width: 298px;
+    height: 345px;
+
+    background-size: contain;
+  }
+}
