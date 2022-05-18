@@ -27,3 +27,12 @@
   background-repeat: no-repeat;
   background-position: center;
 }
+
+@media (min-width: @desktop-width) {
+  .achievements-list {
+    display: grid;
+    grid-template-columns: 313px 313px 313px;
+    grid-template-rows: 114px 114px;
+    grid-auto-flow: column;
+  }
+}

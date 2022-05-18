@@ -6,3 +6,17 @@
 .photo-list__image {
   display: block;
 }
+
+@media (min-width: @tablet-width) {
+  .photo-list {
+    display: grid;
+    grid-template-columns: 300px 300px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-list {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+  }
+}

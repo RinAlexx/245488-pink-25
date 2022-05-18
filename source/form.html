@@ -2,17 +2,18 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header main-header--inner">
-      <div class="main-header__wrapper">
-        <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-image" src="img/logo.svg" width="74" height="23" alt="Приложение Пинк.">
-        </a>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <a class="main-nav__logo" href="index.html">
+            <img class="main-nav__logo-image" src="img/logo.svg" width="74" height="23" alt="Приложение Пинк.">
+          </a>
 
-        <nav class="main-nav">
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
             <svg class="main-nav__toggle-icon" width="50" height="24" viewBox="0 0 50 24" fill="white" xmlns="http://www.w3.org/2000/svg">
@@ -20,7 +21,7 @@
             </svg>
           </button>
 
-          <ul class="main-nav__list site-list">
+          <ul class="main-nav__list site-list reset-list">
             <li class="site-list__item">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
@@ -34,15 +35,21 @@
               <a class="site-list__link" href="https://up.htmlacademy.ru/adaptive/25">Html academy</a>
             </li>
           </ul>
-        </nav>
-      </div>
+        </div>
+      </nav>
     </header>
 
     <main class="main-container">
+      <div class="page-title">
+        <div class="page-title__wrapper">
+          <h1 class="page-title__header page-title__header--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+      </div>
       <div class="page-intro">
         <div class="page-intro__wrapper">
-          <h1 class="page-intro__header page-intro__header--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
-          <p class="page-intro__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p>
+          <p class="page-intro__text">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+            <span class="page-intro__text page-intro__text--hidden">Пожалуйста, заполните форму ниже:</span>
+          </p>
         </div>
       </div>
 
@@ -67,8 +74,8 @@
               </label>
             </fieldset>
 
-            <div class="contestant-data__bg-color-wrapper">
-              <fieldset class="contestant-data__achievements achievements">
+            <div class="contestant-data__achievements">
+              <fieldset class="achievements">
                 <legend class="contestant-data__input-label achievements__title">Ваши безбашенные достижения в путешествии.</legend>
 
                 <ul class="achievements__checkbox achievements-list reset-list">
@@ -124,21 +131,21 @@
             </div>
 
             <fieldset class="contestant-data__contacts contestant-contacts">
-              <legend class="visually-hidden">Укажите ваши контакты.</legend>
+              <legend class="contestant-data__input-label contestant-contacts__title contestant-contacts--hidden">Укажите ваши контакты.</legend>
 
-              <label class="contestant-data__input-label">
-                <span class="contestant-contacts__label">Номер телефона</span>
+              <label class="contestant-data__input-label contestant-contacts__input-label">
+                <span class="contestant-contacts__label contestant-contacts__label--order">Номер телефона</span>
                 <input class="contestant-data__input contestant-contacts__text" type="tel" name="phone-number" placeholder="Номер, пожалуйста">
               </label>
 
-              <label class="contestant-data__input-label">
-                <span class="contestant-contacts__label">Адрес почты</span>
+              <label class="contestant-data__input-label contestant-contacts__input-label">
+                <span class="contestant-contacts__label contestant-contacts__label--order">Адрес почты</span>
                 <input class="contestant-data__input contestant-contacts__text" type="email" name="email" placeholder="Введите почту *" required>
               </label>
             </fieldset>
 
-            <div class="contestant-data__bg-color-wrapper">
-              <fieldset class="contestant-data__app applications">
+            <div class="contestant-data__app">
+              <fieldset class="applications">
                 <legend class="contestant-data__input-label applications__title">С каким приложением путешествовали?</legend>
 
                 <ul class="applications__radio-button applications-list reset-list">
