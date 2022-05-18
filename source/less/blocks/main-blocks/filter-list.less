@@ -58,3 +58,24 @@
     display: none;
   }
 }
+
+@media (min-width: @tablet-width) {
+  .filter-list__buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .filter-list__ranges {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-list__range {
+    margin-bottom: 50px;
+
+    &--not-active {
+      display: block;
+    }
+  }
+}

@@ -26,8 +26,13 @@
   }
 }
 
-.contestant-data__bg-color-wrapper {
+.contestant-data__achievements,
+.contestant-data__app {
   background-color: @color-lightgrey;
+}
+
+.contestant-data__button {
+  margin: 0 auto;
 }
 
 .contestant-data__required {
@@ -45,6 +50,7 @@
 }
 
 .contestant-data__popup {
+  display: none;
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
@@ -57,4 +63,60 @@
 
 .contestant-data__popup-text {
   padding-bottom: 50px;
+}
+
+.contestant-data__popup-button {
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
+  .contestant-data {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contestant-data__achievements,
+  .contestant-data__app {
+    background-color: @color-white;
+  }
+
+  .contestant-data__input-label {
+    display: flex;
+  }
+
+  .contestant-data__app {
+    order: 2;
+  }
+
+  .contestant-data__contacts {
+    order: 3;
+  }
+
+  .contestant-data__achievements {
+    order: 4;
+  }
+
+  .contestant-data__description {
+    order: 5;
+  }
+
+  .contestant-data__button {
+    order: 6;
+  }
+
+  .contestant-data__required {
+    order: 7;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contestant-data {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contestant-data__button {
+    margin: 0;
+  }
 }

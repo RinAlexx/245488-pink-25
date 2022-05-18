@@ -11,3 +11,39 @@
   padding-top: 29px;
   padding-bottom: 17px;
 }
+
+.contestant-contacts__title {
+  display: none;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .contestant-contacts {
+    border: 2px solid @color-grey-border;
+  }
+
+  .contestant-contacts__title {
+    display: block;
+  }
+
+  .contestant-contacts__input-label {
+    flex-direction: column;
+  }
+
+  .contestant-contacts__label {
+    &--order {
+      order: 2;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contestant-contacts {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contestant-contacts__input-label {
+    margin-right: 62px;
+  }
+}
