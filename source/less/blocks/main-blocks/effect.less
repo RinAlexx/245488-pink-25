@@ -16,7 +16,9 @@
     display: grid;
     grid-template-columns: 238px 310px;
     gap: 72px;
-    width: 660px;
+    width: 620px;
+    padding-top: 54px;
+    padding-bottom: 66px;
   }
 
   .effect__hours {
@@ -35,6 +37,21 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  .effect__info {
+    margin-top: 31px;
+  }
+
+  .effect__header {
+    width: 170px;
+    font-size: 30px;
+    line-height: 36px;
+    color: @color-black;
+  }
+
+  .effect__link {
+    color: @color-bright;
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -51,6 +68,25 @@
     width: 298px;
     height: 345px;
 
+    font-size: 120px;
+    line-height: 163px;
     background-size: contain;
+  }
+
+  .effect__header {
+    width: auto;
+    line-height: 30px;
+  }
+
+  .effect__text {
+    width: 570px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+    color: @color-bright;
   }
 }

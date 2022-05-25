@@ -1,5 +1,6 @@
 .tariffs {
   position: relative;
+  overflow: hidden;
   background-color: @color-lightgrey;
 
   &::before {
@@ -20,13 +21,19 @@
 }
 
 .tariffs__list {
+  position: relative;
+  left: -66%;
   display: block;
   padding-top: 83px;
 }
 
 @media (min-width: @tablet-width) {
   .tariffs__wrapper {
-    width: 660px;
+    width: 620px;
+  }
+
+  .tariffs__list {
+    position: static;
   }
 
   .tariffs__toggles {

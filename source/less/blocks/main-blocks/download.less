@@ -1,5 +1,6 @@
 .download {
-  margin-top: -72px;
+  margin-top: -66px;
+  padding-top: 92px;
 
   text-align: center;
   color: @color-white;
@@ -7,31 +8,30 @@
   background-color: #1d2631;
   background-image: url("../img/bg-image.jpg");
   background-repeat: no-repeat;
-  background-position: top center;
-}
-
-.download__wrapper {
-  width: 320px;
-  margin: 0 auto;
+  background-position: top -30px center;
+  background-size: contain;
 }
 
 .download__text {
-  margin: 0;
-  padding: 95px 40px 290px 40px;
+  margin: 0 auto;
+  width: 240px;
 
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
 }
 
-.download__link-wrapper {
-  padding-top: 28px;
-  padding-left: 20px;
-  padding-right: 20px;
+.download__link {
+  margin-top: 320px;
+  padding: 28px 20px;
+
+  background-color: #1d2631;
 }
 
-.download__link {
+.download__link-button {
   display: block;
+  width: 280px;
+  margin: auto;
   padding-top: 17px;
   padding-bottom: 17px;
 
@@ -57,42 +57,101 @@
 }
 
 .download__list {
-  padding: 32px 38px;
+  margin: 0 auto;
+  margin-top: 35px;
 }
 
 .download__accessibility {
-  margin: 0;
-  padding-bottom: 38px;
+  display: block;
+  width: 280px;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 8px;
 
   font-weight: 300;
 }
 
 @media (min-width: @tablet-width) {
   .download {
+    margin-top: -110px;
+    padding-top: 213px;
+
     text-align: left;
     background-image: url("../img/bg-image-tablet.jpg");
+    background-position: top center;
+    background-size: cover;
   }
 
   .download__wrapper {
-    width: 660px;
+    width: 620px;
+    margin: 0 auto;
   }
 
   .download__text {
-    padding-bottom: 40px;
+    max-width: 300px;
+    margin-left: 0;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+
+    font-size: 40px;
+    line-height: 120%; /* or 48px */
   }
 
   .download__link {
+    margin-top: 38px;
+
+    background-color: transparent;
+  }
+
+  .download__link-button {
     width: 300px;
+    margin-left: 20px;
+
     text-align: center;
+  }
+
+  .download__list {
+    margin-left: 66px;
+  }
+
+  .download__accessibility {
+    width: 300px;
+    margin-left: 20px;
+    text-align: center;
+
+    font-size: 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .download {
+    margin-top: 0;
+    padding-top: 224px;
+
     background-image: url("../img/bg-image-desktop.jpg");
   }
 
   .download__wrapper {
     width: 940px;
+  }
+
+  .download__text {
+    padding-left: 30px;
+
+    font-size: 50px;
+    line-height: 68px;
+  }
+
+  .download__link-button {
+    margin-left: 0;
+  }
+
+  .download__list {
+    margin-left: 46px;
+  }
+
+  .download__accessibility {
+    margin-left: 0;
   }
 }

@@ -32,7 +32,12 @@
 
 @media (min-width: @tablet-width) {
   .reviews__wrapper {
-    width: 660px;
+    width: 620px;
+  }
+
+  .reviews__list {
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .reviews__item {
@@ -42,10 +47,16 @@
 
   .reviews__author-info {
     display: block;
+    line-height: 30px;
+  }
+
+  .reviews__author-name {
+    font-size: 20px;
   }
 
   .reviews__text {
     order: -1;
+    font-size: 18px;
   }
 }
 
@@ -60,5 +71,9 @@
     background-image: url("../img/quotes.svg");
     background-repeat: no-repeat;
     background-position: top center;
+  }
+
+  .reviews__toggles {
+    display: none;
   }
 }
