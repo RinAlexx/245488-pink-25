@@ -1,21 +1,9 @@
 .advantages-list {
-  position: relative;
-
-  padding-bottom: 281px;
+  padding-bottom: 325px;
 
   background-image: url("../img/iphone-3.png");
   background-repeat: no-repeat;
   background-position: center bottom -43px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -50px;
-    left: 0;
-    width: 320px;
-    height: 50px;
-    background-image: url("../img/triangle-grey.svg");
-  }
 }
 
 .advantages-list__title {
@@ -24,19 +12,35 @@
 }
 
 .advantages-list__text {
-  padding-top: 10px;
-  padding-bottom: 30px;
+  margin-bottom: 0;
+  padding-bottom: 29px;
 }
 
 @media (min-width: @tablet-width) {
   .advantages-list {
+    position: relative;
     padding-bottom: 0;
-    background-position: left top;
+
+    background-image: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: -100px;
+      width: 268px;
+      height: 547px;
+      background-image: url("../img/iphone-3-tablet.png");
+    }
   }
 
   .advantages-list__item {
-    padding-left: 200px;
+    padding-left: 310px;
     text-align: left;
+
+    &:last-child .advantages-list__text {
+      padding-bottom: 10px;
+    }
   }
 }
 
@@ -45,10 +49,16 @@
     display: flex;
     justify-content: center;
 
-    background-image: none;
+    &::before {
+      background-image: none;
+      width: 0;
+      height: 0;
+    }
   }
 
   .advantages-list__item {
+    position: relative;
+
     text-align: center;
     padding: 360px 30px 60px;
 
@@ -56,15 +66,78 @@
     background-position: center top;
 
     &--left {
-      background-image: url("../img/iphone-1.png");
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 186px;
+        height: 302px;
+        background-image: url("../img/iphone-1.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 290px;
+        left: 0;
+        width: 300px;
+        height: 17px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+        opacity: 0.3;
+        filter: blur(4px);
+      }
     }
 
     &--center {
-      background-image: url("../img/iphone-2.png");
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 186px;
+        height: 302px;
+        background-image: url("../img/iphone-2.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 290px;
+        left: 0;
+        width: 300px;
+        height: 17px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+        opacity: 0.3;
+        filter: blur(4px);
+      }
     }
 
     &--right {
-      background-image: url("../img/iphone-3.png");
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 186px;
+        height: 302px;
+        background-image: url("../img/iphone-3.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 290px;
+        left: 0;
+        width: 300px;
+        height: 17px;
+        background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, #000000 49.8%, rgba(0, 0, 0, 0) 93.23%);
+        opacity: 0.3;
+        filter: blur(4px);
+      }
     }
   }
 }
